@@ -1,0 +1,68 @@
+<section id="sobremi" class="sobre-mi py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Sobre Mí</h2>
+                <p>Mi travesía profesional es única. Comencé mi carrera en la ingeniería
+                    agropecuaria, un campo apasionante que me proporcionó una sólida
+                    base en
+                    resolución de problemas y pensamiento analítico. Sin embargo, mi
+                    curiosidad y mi deseo de explorar nuevas áreas me llevaron hacia
+                    la
+                    programación. Desde ese decisivo cambio hace tres años, me he
+                    sumergido
+                    en el vasto mundo del desarrollo de software, adquiriendo
+                    habilidades
+                    tanto en backend como en frontend.</p>
+                <p>En el área de backend, me especializo en Java y Spring, y manejo
+                    bases de
+                    datos con MongoDB, MySQL y Redis. Esto me permite crear
+                    aplicaciones
+                    robustas y escalables. Mi uso de Docker refleja mi compromiso
+                    con la
+                    creación de entornos eficientes y optimizados. Además, mi
+                    dominio de
+                    Git, junto con herramientas como Postman y Swagger, subraya mi
+                    capacidad
+                    para diseñar y documentar APIs de manera eficaz.</p>
+                <p>En el ámbito del frontend, tengo experiencia con HTML5, CSS3 y
+                    Bootstrap, lo
+                    que me permite desarrollar interfaces de usuario intuitivas y
+                    responsivas. Mi conocimiento en JavaScript y TypeScript,
+                    complementado
+                    con herramientas como Thymeleaf y Uigradients, me habilita para
+                    construir aplicaciones web dinámicas e interactivas.</p>
+                <p>Esta transición de la ingeniería agropecuaria a la programación no
+                    solo
+                    amplió mi perspectiva profesional, sino que también enriqueció
+                    mi
+                    enfoque en la resolución de problemas y la innovación
+                    tecnológica. Con
+                    <span id="experienceYears">3</span> años de experiencia en
+                    desarrollo de software, me considero un
+                    profesional versátil, capaz de adaptarme y prosperar en diversos
+                    entornos de trabajo. Siempre estoy en búsqueda de superar
+                    desafíos con
+                    soluciones creativas y eficientes.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <h3>BackEnd Languages and Tools:</h3>
+                @for(i of backTools; track i.id){
+                <img src="{{i.icon}}" class="icono" />
+                }
+            </div>
+            <div class="col-lg-6">
+                <h3>FrontEnd Languages and Tools:</h3>
+                @for(i of frontTools; track i.id){
+                <img src="{{i.icon}}" class="icono" />
+                }
+            </div>
+            <div class="custom-container">
+                <div class="container-button">
+                    <a href="https://luiso-o.github.io/My_Cv/" target="_blank">Accede a mi CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

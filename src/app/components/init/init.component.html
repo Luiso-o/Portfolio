@@ -1,0 +1,17 @@
+<section id="inicio" class="inicio">
+        <div class="container container-inicio d-flex justify-content-center">
+            <div class="card">
+                <div class="img-container"></div>
+                <div class="text-icons-container">
+                    <h1>{{ nombre }}</h1>
+                    <h4 class="web-developer-text" id="web-developer-text"></h4>
+                    <div class="redes">
+                        @for(index of redes; track index.id){
+                                <a href="{{index.url}}" target="_blank" rel="noopener noreferrer"><i class="{{index.icon}}" ></i></a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
