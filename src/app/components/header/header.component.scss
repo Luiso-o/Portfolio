@@ -1,0 +1,84 @@
+$main-color: #40c8a4;
+$background: #1e2326;
+$letter-color:white;
+$font-size-default: 1.1rem;
+$transition-default: 0.5s ease;
+$text-shadow-effect: 3px 3px 6px rgba(0, 0, 0, 0.6);
+
+.navbar{
+  background-color: $background;
+}
+
+//Hello World
+.navbar-brand {
+  color: $main-color; 
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 40px;
+  align-items: center;
+  justify-content: center;
+
+    &:hover, &:focus {
+        color: $main-color;
+    }
+}
+
+//Bottom responsive
+.navbar-toggler {
+  font-size: 1rem;
+  color: $letter-color; 
+  border-color: $main-color;  
+  transition: background-color $transition-default, color $transition-default;
+
+  &:hover, &:focus {
+    background-color: $main-color;
+    color: $letter-color;
+  }
+}
+ 
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1); 
+}
+
+.navbar-nav .nav-link {
+  color: $letter-color;
+  font-weight: bold;
+  transition: background-color $transition-default, color $transition-default, text-shadow $transition-default;
+  margin-right: 20px;
+  border-radius: 20px; 
+  background-color: transparent;
+  padding: .5rem 1rem; 
+  margin: 0 5px; 
+  font-size: $font-size-default; 
+  cursor: pointer;
+
+  &:hover, &:focus{
+    background-color: $main-color;
+    color: $letter-color;
+    text-shadow: $text-shadow-effect;
+    transform: scale(1.05);
+  }
+}
+
+//Efectos opciones menu
+.nav-link {
+  padding: .5rem 1rem; 
+  margin: 0 5px; 
+  font-size: 1.1rem; 
+  transition: color 0.5s ease, background-color 0.5s ease, transform 0.3s ease;
+}
+
+.nav-link .emoji.active-emoji {
+  opacity: 1 !important;
+}
+
+//muestra el emogi
+.nav-link:hover .emoji {
+  opacity: 1;
+}
+
+.nav-link .emoji {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity $transition-default;
+}
