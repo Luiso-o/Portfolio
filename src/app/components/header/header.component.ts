@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 
 //Mantiene el icono de los componentes del header si se hace click en ellos
 export class HeaderComponent implements OnInit{
+
   activeEmoji: any;
   ngOnInit(): void {
     const navLinks = document.querySelectorAll('.nav-link');
@@ -29,5 +30,4 @@ export class HeaderComponent implements OnInit{
       });
     });
   }
-
 }
