@@ -1,0 +1,53 @@
+$background: #1e2326;
+$background-bottom: #252a2e;
+$text:white;
+$link:#64c8a4;
+$link-hover:darken(#64c8a4, 15%);
+
+.site-footer {
+  background-color: $background;
+  color: $text;
+  padding: 20px 0;
+  text-align: center;
+  height: 150px;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.site-footer a {
+  color: $link;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px); 
+  }
+}
+
+.to-top {
+  margin-bottom: 10px;
+  color: $text;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: $background-bottom;
+}
+
+.opensource-link {
+  color: $link;
+  transition: transform 0.3s ease, color 0.3s ease; 
+  text-decoration: none;
+  display: inline-block; 
+  transform-origin: center; 
+}
+
+.opensource-link:hover, .opensource-link:focus {
+  color: $link-hover;
+  transform: scale(1.2); 
+}
