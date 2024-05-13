@@ -1,9 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ParallaxDirective } from '../../directives/parallax.directive';
 
 @Component({
   selector: 'app-init',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, ParallaxDirective],
   templateUrl: './init.component.html',
   styleUrls: ['./init.component.scss']
 })
