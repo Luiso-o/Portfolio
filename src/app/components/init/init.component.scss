@@ -31,7 +31,7 @@ section{
         rgba(30, 35, 38, 0.8),
         rgba(30, 35, 38, 1)
       ),
-      url('/assets/images/fondo.jpg');
+      url('assets/images/fondo.jpg');
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -97,7 +97,7 @@ section{
 .img-container {
   min-width: 250px; 
   min-height: 250px; 
-  background: url('/assets/images/presentacion.png');
+  background: url('assets/images/presentacion.png');
   background-size: cover; 
   background-position: center; 
   border-radius: 50%; 

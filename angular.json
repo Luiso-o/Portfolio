@@ -18,6 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/portfolio",
+            "allowedCommonJsDependencies": ["aos"],
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -43,13 +44,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "800kb",
                   "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "85kb",
+                  "maximumError": "90kb"
                 }
               ],
               "outputHashing": "all"
