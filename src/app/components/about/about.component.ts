@@ -41,7 +41,7 @@ export class AboutComponent {
   ];
 
   //Actualiza mis anos de experiencia
-  startYear = 2021;
+  startYear = 2022;
   experienceYears: number;
 
   constructor() {
