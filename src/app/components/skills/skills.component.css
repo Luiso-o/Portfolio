@@ -1,0 +1,60 @@
+.skills {
+  padding-top: 40px;
+  min-height: 1150px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: #1e2326;
+}
+.skills h2 {
+  font-weight: bold;
+}
+.skills .skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skills .sub-title {
+  font-weight: bold;
+  color: rgba(64, 200, 164, 0.7);
+}
+.skills .border-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 8px 2px rgba(64, 200, 164, 0.7);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.skills .border-img img {
+  width: 60%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+.skills .border-img:hover, .skills .border-img:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px 3px rgba(185, 147, 214, 0.9);
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 20px;
+  }
+  .skills .skill-icon {
+    margin-bottom: 20px;
+  }
+  .skills .border-img {
+    width: 60px;
+    height: 60px;
+  }
+  .skills img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}/*# sourceMappingURL=skills.component.css.map */
